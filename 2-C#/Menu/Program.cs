@@ -1,7 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
 
-    Console.Clear();
+// Console.WriteLine("Hello, World!");
+
+
+//    
+    using DataFunction;
+   
+    
+
+    //  Burger Burger1 = new Burger();
+    //   Console.WriteLine(Burger());
     bool repeat = true;
   while (repeat)
   {
@@ -17,14 +25,27 @@ Console.WriteLine("Hello, World!");
         if(userInput == "1")
         {
             Console.WriteLine("Please choose your toppings");
-            Console.WriteLine("[1] - Ketchup");
-            Console.WriteLine("[2] - Mustard");
-            Console.WriteLine("[3] - Ketchup & Mustard");
+               string toppings = Console.ReadLine();
+            Console.WriteLine($" {toppings} was added to your list!");
+            Console.WriteLine("[1] done");
+            Console.WriteLine("[2] add toppings");
+            string userChoice = Console.ReadLine();
+            if(userInput == "1"){
+
+                 Console.WriteLine("You meal is being prepared");
+                 
+
+
+            }
+            else if (userInput == "2"){
+               
+            
+
+            }
             
 
             
-            string toppings = Console.ReadLine();
-            
+          
 
         if(toppings == "1")
         {
@@ -40,13 +61,27 @@ Console.WriteLine("Hello, World!");
             Console.WriteLine("Enjoy your Krabby Patty with Ketchup and Mustard!");
         }
             
-            
+         Data data1 = new Data()
+         {
+             Meat="Medium-Rare",
+             Bun="Seaseme",
+             Cost=5
+         };  
+          Console.WriteLine($"Your burger meat is {data1.Meat}");
+          Console.WriteLine($"Your bun type is {data1.Bun}");
+        Console.WriteLine($"Your burger Cost is {data1.Cost} dollars");
+
+
+
+
+
+
         
         }
 
         if(userInput == "2")
         {
-            Console.WriteLine("Have a nice day");
+            Console.WriteLine("Have a nice day!");
         }
 }
 
