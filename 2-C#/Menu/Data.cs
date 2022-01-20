@@ -36,7 +36,7 @@ namespace DataFunction
 
         }
 
-         public void AddToppingToList(string toppings)
+         public void SearchToppingList(string toppings)
         {
          
             foreach (string item in _toppingsList)
@@ -44,10 +44,30 @@ namespace DataFunction
                 if(toppings == item)
                 {
                     _toppingsList.Add(toppings);
+                    Console.WriteLine($"{toppings} has been added to the list!");
                 }
             }
         
         
+        }
+
+        public void ShowToppingList(string toppings)
+        {
+                   foreach (string item in _toppingsList)
+            {
+                if(toppings == item)
+                {
+                    
+                    Console.WriteLine($"your toppings are: {toppings} ");
+                }
+            }
+        }
+        public void AddToppingList(string toppings)
+        {
+                     _toppingsList.Add(toppings);
+                    
+                    
+                    
         }
 
 
