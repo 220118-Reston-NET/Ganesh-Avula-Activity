@@ -41,11 +41,11 @@ namespace DataFunction
          
             foreach (string item in _toppingsList)
             {
-                if(toppings == item)
-                {
+                
+                
                     _toppingsList.Add(toppings);
                     Console.WriteLine($"{toppings} has been added to the list!");
-                }
+                
             }
         
         
@@ -53,18 +53,30 @@ namespace DataFunction
 
         public void ShowToppingList(string toppings)
         {
+            Console.WriteLine("your toppings are:  ");
                    foreach (string item in _toppingsList)
             {
-                if(toppings == item)
-                {
+                
+                
                     
-                    Console.WriteLine($"your toppings are: {toppings} ");
-                }
+                    Console.WriteLine(item);
+                
             }
         }
         public void AddToppingList(string toppings)
         {
+            
                      _toppingsList.Add(toppings);
+                    
+                    
+                    
+        }
+
+
+         public void RemoveToppingList(string toppings)
+        {
+            Console.WriteLine("What topping would you like to remove? ");
+                     _toppingsList.Remove(toppings);
                     
                     
                     

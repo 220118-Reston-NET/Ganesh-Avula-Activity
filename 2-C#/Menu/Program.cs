@@ -36,45 +36,57 @@
                string toppings = Console.ReadLine();
             Console.WriteLine("[1] done");
             Console.WriteLine("[2] add toppings");
+            
             string userChoice = Console.ReadLine();
-            if(userChoice == "1")
-            {
+              
+                if(userChoice == "1")
+                    {
+                         data1.AddToppingList(toppings);
+                        data1.ShowToppingList(toppings);
+                    }
+                 else if (userChoice == "2")
+                    {
+                        Console.WriteLine("what would you like to add for your topping?");
+                         data1.AddToppingList(toppings);
+                        
+                        string toppings2 = Console.ReadLine();
+                        data1.AddToppingList(toppings2);
+                        
+                        
+                    
 
-                 Console.WriteLine("You meal is being prepared");
-                 data1.AddToppingList(toppings);
-                 data1.ShowToppingList(toppings);
-            }
-        else if (userChoice == "2")
-            {
-                
-                Console.WriteLine("what would you like for your second topping?");
-                string toppings2 = Console.ReadLine();
-                data1.AddToppingList(toppings2);
-                data1.ShowToppingList(toppings2);
+                    }
             
-
-            }
-        
-            
-            
-
             
           
         }
-        else if(userInput=="2")
-        {
-            
-            Console.WriteLine("You meal is being prepared");
 
-        }
-        
             
-         
-        //   Console.WriteLine($"Your burger meat is {data1.Meat}");
-        //   Console.WriteLine($"Your bun type is {data1.Bun}");
-        // Console.WriteLine($"Your burger Cost is {data1.Cost} dollars");
+       
         
+       
+        else if(userInput=="2")
+            {
+            
+                Console.WriteLine("cya!");
+
+            }
+
         
+        Console.WriteLine("[1] submit");
+        Console.WriteLine("[2] change order");
+        string FinalChoice = Console.ReadLine();
+        if(FinalChoice == "1")
+                    {
+                     Console.WriteLine("Your order is preparing!");  
+                    }
+                 else if (FinalChoice == "2")
+                    {
+                       string toppings3 = Console.ReadLine();
+                    data1.RemoveToppingList(toppings3);
+                    data1.ShowToppingList(toppings3);
+
+                    }
 
         
 }
