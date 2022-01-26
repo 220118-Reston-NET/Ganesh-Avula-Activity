@@ -1,9 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ProjUI;
+using ProjModel;
 
-Console.WriteLine("Hello, World!");
 
+//Console.WriteLine("Hello, World!");
 
+//bool repeat=true;
 MainMenu menu = new MainMenu();
 
-menu.Display();
+
+//while(repeat)
+{
+    Console.Clear();
+    menu.Display();
+    
+}
+
+
+

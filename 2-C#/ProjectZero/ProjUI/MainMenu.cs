@@ -10,10 +10,30 @@ namespace ProjUI
             Console.WriteLine("[1] Order Ice Cream");
             Console.WriteLine("[0] Exit");
         }
+    
+
+    public string UserChoice()
+    {
+        string userInput = Console.ReadLine();
+
+        switch (userInput)
+            {
+                case "0":
+                    return "Exit";
+                case "1":
+                    return "AddIceCream";
+                default:
+                    Console.WriteLine("Please input a valid response");
+                    Console.WriteLine("Please press Enter to continue");
+                    Console.ReadLine();
+                    return "MainMenu";
+            }
+
+
     }
 
 
-
+    }
 
 
 
