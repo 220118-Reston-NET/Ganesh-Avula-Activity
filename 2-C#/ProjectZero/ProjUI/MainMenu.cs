@@ -1,7 +1,7 @@
 namespace ProjUI
 {
 
-    public class MainMenu
+    public class MainMenu : IMenu
     {
          public void Display()
         {
@@ -12,7 +12,7 @@ namespace ProjUI
         }
     
 
-    public string UserChoice()
+    public string UserInput()
     {
         string userInput = Console.ReadLine();
 

@@ -5,6 +5,8 @@ namespace ProjModel
         public string Name {get; set;}
         public int   Scoops {get; set;}
 
+         public int   NumOfToppings {get; set;}
+
         public string Flavor {get; set;}
 
         
@@ -36,7 +38,7 @@ namespace ProjModel
             Name = "Rocky Road";
             Scoops = 3;
             Flavor ="Chocolate";
-          
+            
         }
 
      

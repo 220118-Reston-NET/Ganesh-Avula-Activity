@@ -6,15 +6,22 @@ using ProjModel;
 //Console.WriteLine("Hello, World!");
 
 //bool repeat=true;
-MainMenu menu = new MainMenu();
 
 
 //while(repeat)
-{
-    Console.Clear();
-    menu.Display();
+//{
     
-}
+    
+    IMenu menu = new MainMenu();
+    IceCream order1 = new IceCream();
+    
+    menu.Display();
+
+    string ans = menu.UserInput();
+
+    
+    
+//}
 
 
 
